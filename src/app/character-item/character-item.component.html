@@ -1,0 +1,8 @@
+<div>
+  <h3>{{characterSnapShot.name}}</h3>
+  <h4>{{characterSnapShot.location.name}}</h4>
+  <img [src]="characterSnapShot.image" /> 
+  <input [(ngModel)]="characterSnapShot.location.name">
+  <button (click)="setSnapShot()">Reset</button>
+  <button (click)="print(characterSnapShot)">Print</button>
+</div>

@@ -1,0 +1,4 @@
+<h3>Rick and Morty test</h3>
+<div *ngFor="let character of characters">
+  <app-character-item [character]="character" (charecterClicked)="clickCharacter($event)"></app-character-item>
+</div>
